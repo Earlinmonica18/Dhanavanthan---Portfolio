@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dhanavanthan - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ICONS -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI;
+}
+
+body{
+  display:flex;
+  height:100vh;
+  background:#061417;
+  color:#cfd8dc;
+  font-size: 20px;
+}
+
+mark{
+  background:none;        /* remove background */
+  color:#eef4f3;          /* highlight color */
+  font-weight:bold;       /* bold effect */
+}
+
+/* LEFT */
+.left{
+  width:40%;
+  padding:60px;
+}
+
+.role{
+  color:#00e5c0;
+}
+/* NAME */
+.name{
+  font-size:72px;
+  font-weight:bold;
+  color:#e0f7fa;
+  margin:10px 0;
+}
+
+.heading{
+  font-size:34px;
+}
+
+.project h3{
+  font-size:22px;
+}
+
+.details h3{
+  font-size:20px;
+}
+
+/* DESCRIPTION */
+.desc{
+  color:#8aa5ad;
+  line-height:1.6;
+}
+
+.desc,
+.project p,
+.details p{
+  font-size:18px;
+}
+
+/* ICONS */
+.social{
+  margin:25px 0;
+}
+
+.social i{
+  font-size:22px;
+  margin-right:20px;
+  cursor:pointer;
+  color:#8aa5ad;
+  transition:0.3s;
+}
+
+.social i:hover{
+  color:#00e5c0;
+}
+
+/* MENU */
+.menu{
+  margin-top:40px;
+}
+
+.menu div{
+  margin:18px 0;
+  cursor:pointer;
+  position:relative;
+  padding-left:40px;
+  color:#8aa5ad;
+}
+
+.menu div::before{
+  content:"";
+  width:25px;
+  height:1px;
+  background:#8aa5ad;
+  position:absolute;
+  left:0;
+  top:50%;
+  transition:0.3s;
+}
+
+.menu div.active{
+  color:#00e5c0;
+}
+
+.menu div.active::before{
+  width:40px;
+  background:#00e5c0;
+}
+
+/* RIGHT */
+.right{
+  width:60%;
+  padding:60px;
+  border-left:1px solid #0f1f23;
+}
+
+.section{
+  display:none;
+}
+
+.section.active{
+  display:block;
+}
+
+.title{
+  color:#00e5c0;
+  letter-spacing:2px;
+}
+
+.heading{
+  font-size:30px;
+  margin:20px 0;
+}
+
+.info{
+  margin-top:30px;
+}
+
+.info div{
+  margin-bottom:20px;
+}
+
+.footer{
+  position:absolute;
+  bottom:20px;
+  color:#6b8a91;
+}
+
+/* EDUCATION */
+.education{
+  padding:50px;
+}
+body{
+  background:#0a1c1a;
+  font-family:Arial, sans-serif;
+}
+
+
+.education h2{
+  color:#e8f6f4;
+  margin-bottom:30px;
+}
+
+/* ROW STRUCTURE */
+.edu-item{
+  display:flex;
+  gap:40px;
+  margin-bottom:30px;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+/* LEFT YEAR */
+.year{
+  width:120px;
+  color:#bfcdd1;
+}
+
+/* RIGHT CONTENT */
+.details h3{
+  color:rgb(240, 231, 231);
+  margin:0;
+}
+
+.details h4{
+  color:#00e6c3;
+  margin:5px 0;
+}
+
+.details p{
+  color:#9fb3bd;
+}
+
+/* 🔥 HOVER EFFECT */
+.edu-item:hover{
+  background:#34454c;
+  transform:translateX(8px);
+  box-shadow:0 0 15px #00e6c355;
+}
+
+/* ✨ BLINK LIGHT EFFECT */
+.edu-item:hover h4{
+  text-shadow:0 0 8px #ddebe9;
+}
+
+/* PROJECTS */
+.projects{
+  padding:50px;
+}
+
+.projects h2{
+  color:#00e6c3;
+  margin-bottom:30px;
+}
+
+/* PROJECT CARD */
+.project{
+  margin-bottom:50px;
+}
+
+.project h3{
+  color:#ffffff;
+  margin-bottom:10px;
+}
+
+.project p{
+  color:#9fb3bd;
+  line-height:1.6;
+  max-width:700px;
+}
+
+/* TAGS */
+.tags span{
+  display:inline-block;
+  padding:6px 14px;
+  margin:5px;
+  border-radius:20px;
+  background:#0f2c2f;
+  color:#00e6c3;
+  font-size:13px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+/* HOVER */
+.tags span:hover{
+  background:#00e6c3;
+  color:#061417;
+  transform:scale(1.1);
+  box-shadow:0 0 10px #00e6c3;
+}
+
+/* SKILLS section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #021c1c;
+  color: #fff;
+  padding: 40px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  color: #00e0c6;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* GRID LAYOUT */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 100px;
+}
+
+/* CATEGORY */
+.category h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #cfd8dc;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.tag:hover {
+  background: #00e0c6;
+  color: #021c1c;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LEFT -->
+<div class="left">
+
+  <div class="role">Biomedical Engineering Student</div>
+  <div class="name">Dhanavanthan</div>
+
+  <div class="desc">
+    I build innovative healthcare solutions combining medical science with technology. <br>Currently pursuing B.Tech in Biomedical Engineering at Dhanalakshmi Srinivasan University.
+  </div>
+
+  <!-- ICONS -->
+  <div class="social">
+    <i class="ri-mail-line"></i>
+  </div>
+
+  <!-- MENU -->
+  <div class="menu">
+    <div class="active" onclick="showSection('about', this)">ABOUT</div>
+    <div onclick="showSection('education', this)">EDUCATION</div>
+    <div onclick="showSection('projects', this)">PROJECTS</div>
+    <div onclick="showSection('skills', this)">SKILLS</div>
+    <div onclick="showSection('contact', this)">CONTACT</div>
+  </div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+
+  <!-- ABOUT -->
+  <div id="about" class="section active">
+    <div class="title">ABOUT</div>
+    <div class="heading">Who am I?</div>
+        <br>
+            <p>I'm a passionate <mark>Biomedical Engineering</mark> student with a deep interest in developing healthcare technologies that make a real difference in people's lives. My journey in this field started with curiosity about how technology can solve complex medical challenges.</p>
+        <br>
+            <p>Currently, I'm focused on building projects that bridge the gap between<mark>medical science</mark> and <mark>software engineering</mark>. From developing sleep apnea detection systems to creating hospital management solutions, I enjoy tackling problems that have meaningful impact.</p>
+        <br>
+                <p>My goal is to continue learning and growing as a developer while contributing to innovative healthcare solutions that improve patient outcomes and advance medical technology.</p>
+        <br>
+                <p>When I'm not coding or studying, you'll find me exploring new technologies, reading about the latest advancements in medical devices, or working on personal projects that push my skills further.</p>
+        
+</div>
+
+
+  <!-- EDUCATION -->
+  
+  <div id="education" class="section">
+  <div class="education">
+  <h2>EDUCATION</h2>
+
+  <!-- ITEM 1 -->
+  <div class="edu-item">
+    <div class="year">2022 - Present</div>
+    <div class="details">
+      <h3>B.Tech in Biomedical Engineering</h3>
+      <h4>Dhanalakshmi Srinivasan University</h4>
+      <p>Focusing on medical device design, signal processing, and healthcare systems.</p>
+    </div>
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="edu-item">
+    <div class="year">2020 - 2022</div>
+    <div class="details">
+      <h3>Higher Secondary (12th)</h3>
+      <h4>Higher Secondary School</h4>
+      <p>Biology, Physics, Chemistry</p>
+    </div>
+  </div>
+
+  <!-- ITEM 3 -->
+  <div class="edu-item">
+    <div class="year">2019 - 2020</div>
+    <div class="details">
+      <h3>Secondary (10th)</h3>
+      <h4>Secondary School</h4>
+      <p>Strong foundation in science & maths</p>
+    </div>
+  </div>
+ </div>
+</div>
+  <!-- PROJECTS -->
+  <div id="projects" class="section">
+    <div class="project">
+    <h3>Sleep Apnea Detector</h3>
+    <p>
+      A medical device project that monitors breathing patterns during sleep 
+      to detect and alert users about potential sleep apnea episodes. 
+      Utilizes signal processing and machine learning algorithms to improve 
+      accuracy and provide real-time monitoring.
+    </p>
+
+      <div class="tags">
+      <span>Python</span>
+      <span>Signal Processing</span>
+      <span>Machine Learning</span>
+      <span>Medical Devices</span>
+     </div>
+
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills" class="section">
+ <div class="section-title">SKILLS</div>
+
+<div class="skills-container">
+
+  <!-- LEFT SIDE -->
+   <div class="category">
+    <h2>Tools & Platforms</h2>
+    <div class="tags">
+      <div class="tag">VS Code</div>
+      <div class="tag">LabVIEW</div>
+      <div class="tag">Microsoft Office</div>
+      <div class="tag">Figma</div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Biomedical</h2>
+    <div class="tags">
+      <div class="tag">Medical Device Design</div>
+      <div class="tag">Biomechanics</div>
+      <div class="tag">Biosignal Analysis</div>
+      <div class="tag">Healthcare Systems</div>
+      <div class="tag">Medical Imaging</div>
+    </div>
+  </div>
+
+  <!-- SECOND ROW -->
+   <div class="category">
+    <h2>Technical Skills</h2>
+    <div class="tags">
+      <div class="tag">Python</div>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="section">
+    <div class="title">CONTACT</div>
+    <div class="heading">Let's Connect</div>
+
+    <div class="info">
+      <div class="info">
+      <div>
+        Email
+        <strong><a href="dhanush0280@gmail.com" target="_blank">dhanush0280@gmail.com</a></strong>
+      </div>
+
+       <div>
+        Phone
+        <strong><a href="tel:+91 99657 67582" target="_blank">+91 99657 67582</a></strong>
+      </div>
+
+     <div>
+        Location
+        <strong>Tamil Nadu, India</strong>
+    </div>
+  
+</div>
+
+
+
+  <div class="footer">2026 Dhanavanthan</div>
+
+</div>
+
+<!-- JS -->
+<script>
+function showSection(id, element){
+
+  // hide all
+  document.querySelectorAll(".section").forEach(sec=>{
+    sec.classList.remove("active");
+  });
+
+  // show selected
+  document.getElementById(id).classList.add("active");
+
+  // active menu
+  document.querySelectorAll(".menu div").forEach(item=>{
+    item.classList.remove("active");
+  });
+
+  element.classList.add("active");
+}
+</script>
+
+</body>
+</html>
